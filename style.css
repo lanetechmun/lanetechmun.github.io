@@ -1,0 +1,534 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Flexbox container for the whole page */
+body {
+    display: block;
+
+}
+
+
+/* Tab Bar Styles */
+.tab-bar {
+     padding: 10px 20px;   
+    
+    background-color: rgba(206, 206, 206, 0.5); /* opacity*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    /* Optional: Adds a blur effect to content behind the bar */
+    backdrop-filter: blur(1px); 
+
+    position: sticky; /* Stays at top while scrolling */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keeps it above everything else */
+}
+
+/* Ensure the wrapper doesn't have overflow hidden, or sticky won't work */
+.hero-wrapper {
+    position: relative;
+}
+
+
+
+.tab-link {
+    text-decoration: none; /* Removes default blue underline */
+    display: inline-block; /* Allows padding to work correctly */
+    background: none;
+    border: none;
+    color: #444;
+    padding: 16px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-link:hover {
+    color: #000; 
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+
+.tab-link.active {
+    color: rgba(33, 78, 49); 
+    border-bottom: 3px solid rgba(33, 78, 49);
+    font-weight: 600;
+}
+
+/* Centered Content Area */
+/* Base style for all hero sections - keep this! */
+.tabBar-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     /* These three lines make the background images responsive */
+    background-size: cover;      /* Fills the screen width/height */
+    background-position: center; /* Centers the image during scaling */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    margin-top: -62px; /* Pulls the image up behind the sticky bar */
+    padding-top: 62px; /* Re-centers the content so it's not cut off by the bar */
+
+}
+
+
+/* Lane Tech exterior */
+.home-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/laneTech.webp');
+}
+
+/* Replace with still-life */
+.committees-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/placeholder.jpg');
+}
+
+/* Replace with Pro Secretariat Photo*/
+.secretariat-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/placeholder.jpg');
+}
+
+
+/* Large committee backgrounds*/
+.WHO-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/OpioidCrisis.webp');
+}
+
+.DISEC-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/nuclearWeapons.png'); /* Attribute Physicians for Social Responsibility */
+}
+
+.theBoys-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/boys.jpg'); /* Attribute Refinery29 */
+}
+
+.americanRevolution-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/washingtonCrossing.avif'); /* Attribute History.com */
+}
+
+.stalin-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/funeralProcessionStalin.avif');/* Attribute New York Times*/
+}
+
+.antarctic-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/antarcticaScene.jpg'); /* Attribute eco watch */
+}
+
+.trump-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/trump.jpg');/* Attribute U.S. Embassy & Consulates in Russia*/
+}
+
+.gsec-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/gsecBg.jpeg'); /* Attribute Popular Science */
+}
+
+.globalFinance-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/finCrisis.jpg'); /* Attribute CBS */
+}
+
+.brand-text {
+    color: rgb(33, 78, 49); 
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.brand-text-com {
+    color: rgb(33, 78, 49); 
+    line-height: 1.6;
+    font-size: 25px;
+}
+
+.main-title {
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgba(33, 78, 49);
+    text-shadow: 0 2px 10px rgba(206, 206, 206, 0.1); 
+}
+
+.main-title-com {
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(14, 49, 26);
+    text-shadow: 0 2px 10px rgba(206, 206, 206, 0.1); 
+}
+
+.main-title-contrast{
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(217, 236, 224);
+    text-shadow: 0 2px 10px rgba(206, 206, 206, 0.1); 
+}
+
+.title-wrapper p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%; /* Ensure it spans the width to allow centering */
+    max-width: 800px; /* Optional: keeps text from getting too wide */
+}
+
+
+/* Container for the logo and text */
+.brand-link {
+    display: flex;
+    align-items: center; /* Vertically centers logo with text */
+    gap: 10px;        
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand-link span {
+    font-size: 24px;       /* Increase text size */
+    letter-spacing: 1px;   /* Optional: adds some breath between letters */
+    line-height: 1;        /* Prevents extra vertical spacing */
+}
+
+/* Controls the logo size */
+.brand-logo {
+    height: 42px;        /* Adjust this height to fit your bar */
+    width: auto;        
+    display: block;
+}
+
+.footer-logo {
+    height: 75px; 
+    align-items: center;
+}
+
+.info-section {
+    background-color: #ffffff;
+    padding: 80px 10%;
+    position: relative; /* Ensures it sits on top of any body backgrounds */
+    z-index: 1;
+    min-height: 500px; /* Adjust based on your content */
+}
+
+.classic-serif {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+}
+
+.bio-row {
+    display: flex;
+    align-items: flex-start; /* Aligns text and image to the top */
+    gap: 40px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+/* This class flips the row so the image moves to the right */
+.bio-row.reverse {
+    flex-direction: row-reverse;
+    text-align: right; /* Flips text alignment for the reverse rows */
+}
+
+/* Remove default margin from the H2 so it aligns perfectly with the image top */
+.bio-text h2 {
+    margin-top: 0; 
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #1a1a1a;
+}
+
+.bio-text p {
+    margin-top: 0;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.committee-card {
+    text-decoration: none;
+}
+
+.committee-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.committee-card:hover img {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.committee-card p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.site-footer {
+    background-color: rgba(206, 206, 206, 0.35); /* matches tab bar softness */
+    backdrop-filter: blur(1px);
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(33, 78, 49); /* your green */
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.footer-credits {
+    font-size: 14px;
+    color: #444;
+    margin: 6px 0;
+}
+
+.footer-meta {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- FADE CAROUSEL SYSTEM --- */
+
+/* 1. The Wrapper (The Anchor) */
+.slider-wrapper {
+    position: relative;
+    width: 350px; 
+    height: 475px;
+    flex-shrink: 0;
+}
+
+/* 2. The Container (The Window) */
+.slider-container {
+    z-index: 1;
+    width: 350px;
+    height: 475px;
+    overflow: hidden;       /* Changed from overflow-x: auto */
+    display: block;
+    position: relative;     /* Required for absolute children */
+    border-radius: 0 !important;
+}
+
+/* 3. The Track (The Stack) */
+.slider {
+    display: block;         /* Changed from flex */
+    width: 100%;
+    height: 100%;
+}
+
+/* 4. The Images (The Layers) */
+.slider img, .portrait-img {
+    position: absolute;     /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    width: 350px !important;
+    height: 475px !important;
+    object-fit: cover;
+    border-radius: 0 !important;
+    
+    /* Fade Logic */
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+    z-index: 1;
+}
+
+/* Class added by JS to show the current image */
+.slider img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* 5. The Controls (The Arrows) */
+.nav-arrow {
+    z-index: 2010; /* Keeps arrows above the stacked images */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    pointer-events: auto;
+}
+
+.nav-arrow:hover {
+    background: rgba(33, 78, 49, 0.9);
+}
+
+.nav-arrow.left { left: 0; }
+.nav-arrow.right { right: 0; }
+
+/* --- INDICATORS --- */
+.slider-dots {
+    z-index: 2015; /* Keeps dots above images */
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/*Mini Version*/
+    /* Override sizes for the grid version */
+    .slider-wrapper.mini, 
+    .slider-wrapper.mini .slider-container,
+    .slider-wrapper.mini .slider img {
+        width: 250px !important; /* Adjust this to your grid's width */
+        height: 300px !important; /* Adjust this to your grid's height */
+    }
+
+    /* Ensure the dots are smaller if needed */
+    .slider-wrapper.mini .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+
+/* Reduce side padding for the whole section to fit 300px cards */
+.info-section {
+    padding: 60px 5% !important; 
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Decreased gap to save horizontal space */
+    margin-top: 40px;
+    justify-items: center; /* Centers cards if the screen is very wide */
+}
+
+.grid-card {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Scaled up Mini Slider */
+.slider-wrapper.mini, 
+.slider-wrapper.mini .slider-container, 
+.slider-wrapper.mini .slider img {
+    width: 300px !important;
+    height: 410px !important; /* Scaled up proportionally */
+    border-radius: 0 !important;
+}
+
+.grid-text h2 {
+    font-size: 20px !important;
+    margin-top: 15px !important;
+    line-height: 1.2;
+}
+
+.grid-text p {
+    font-size: 18px !important;
+    margin-top: 5px !important;
+}
+
+a {
+  color: rgb(46, 127, 53);
+  font-weight: bold;
+}
+
+/* Container must be relative so dropdown can be absolute to it */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(206, 206, 206, 0.95); /* Matches your tab bar softness */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 2000; /* Higher than sticky header */
+    top: 100%; /* Positions it directly below the tab */
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+/* Hover effects for dropdown links */
+.dropdown-content a:hover {
+    background-color: rgba(33, 78, 49, 0.1); /* Light green tint */
+    color: rgb(33, 78, 49); /* Your brand green */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensure the 'Conference' span looks like the other links */
+.dropdown .tab-link {
+    cursor: default;
+    padding-bottom: 20px; /* Extends hover area to prevent accidental closing */
+}
+
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: 0; /* Keeps it sharp and square */
+}
+

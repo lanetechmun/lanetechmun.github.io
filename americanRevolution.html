@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Revolution</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="hero-wrapper">
+          <!-- Tab Bar -->
+        <nav class="tab-bar">
+            <!-- Logo & "LTMUN" -->
+            <div class="logo-container">
+            <a href="backupPage.html" class="brand-link">
+                <img src="images/logo.png" alt="logo" class="brand-logo">
+                <span>LTMUN</span>
+            </a>
+        </div>
+            <!-- Actual tabs-->
+            <div class="nav-links">
+                <!-- Dropdown Container -->
+                <div class="dropdown">
+                    <span class="tab-link">Conference</span>
+                    <div class="dropdown-content">
+                        <a href="logistics.html">Schedule & Map</a>
+                        <a href="keynote.html">Keynote Speaker</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="tab-link">About Us</a>
+                <a href="committees.html" class="tab-link">Committees</a>
+                <a href="secretariat.html" class="tab-link">Secretariat</a>
+            </div>
+        </nav>
+
+        <!-- Main Title -->
+        <main class="tabBar-section americanRevolution-bg">
+            <div class="title-wrapper">
+                <h1 class="main-title-com">The American Revolution</h1>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Info Section - REPLACE PLACEHOLDERS -->
+     <section class="info-section">
+        <!-- Secretary General (Image Left) -->
+        <div class="bio-row">
+            <!-- New Wrapper to contain arrows and slider -->
+            <div class="slider-wrapper" id="amRev-slider">
+                <button class="nav-arrow left" onclick="moveSlide('amRev-slider', -1)">❮</button>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="images/placeholder.jpg" alt="chair(s)" class="portrait-img">
+                        <img src="images/placeholder.jpg" alt="chair(s)" class="portrait-img">
+                    </div>
+                </div>
+
+                <button class="nav-arrow right" onclick="moveSlide('amRev-slider', 1)">❯</button>
+
+                <div class="slider-dots"></div>
+            </div>
+            
+            <div class="bio-text">
+                <h2 class="classic-serif" style="font-weight: bold;">Your Chairs</h2>
+                <p class="brand-text" style="font-weight: bold;">Ngone Dioum & Anika Datta</p>
+                <p class="brand-text-com">
+                    Topic A: Amicable Reconciliation <br>
+                    Topic B: Siege of Boston
+                </p>
+                <div>
+                    <a href="pdfs/AmericanRevolution.pdf" target="_blank">Background Guide</a>
+                    <br><br>
+                    <a href="mailto: ndioum1@cps.edu" target="_blank">  ndioum1@cps.edu </a>
+                    <br>
+                    <a href="mailto:adatta1@cps.edu" target="_blank"> adatta1@cps.edu </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js" defer></script>
+    </section>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+
+        <p class="footer-credits">
+            Lead Developer: Deniana Clemente &nbsp;•&nbsp;
+            Assistant Developer: Anushka Vashisth 
+            <!-- Photography: Quincy Adams -->
+        </p>
+
+        <p class="classic-serif">2501 W Addison St, Chicago, IL 60618</p>
+
+        <p class="footer-meta">
+            © 2026 Lane Tech Model United Nations
+        </p>
+    </div>
+</footer>
+
+</html>
