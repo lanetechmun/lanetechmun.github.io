@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keynote Speaker & Organization</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <!-- Tab Bar -->
+        <nav class="tab-bar brand-font">
+            <!-- Logo & "LTMUN" -->
+            <div class="logo-container">
+                <a href="backupPage.html" class="brand-link">
+                    <img src="images/logo.png" alt="logo" class="brand-logo">
+                    <span style="font-size:220%">LTMUN</span>
+                </a>
+            </div>
+            <!-- Actual tabs-->
+            <div class="nav-links brand-font">
+                <!-- Dropdown Container -->
+                <div class="dropdown" tabindex="0">
+                    <span class="tab-link active">CONFERENCE</span>
+                    <div class="dropdown-content">
+                        <a href="logistics.html">SCHEDULE & MAP</a>
+                        <a href="keynote.html" class="active">KEYNOTE SPEAKER</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="tab-link">ABOUT US</a>
+                <a href="committees.html" class="tab-link">COMMITTEES</a>
+                <a href="secretariat.html" class="tab-link">SECRETARIAT</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="info-section">
+        
+            <div class="ACLU-container">
+                <img src="images/ACLUpromo.png" alt="ACLU Graphic"> <!--Attribute ACLU-->
+
+                <p class="giant-quote">
+                    "The ACLU dares to create a more perfect union <br> — beyond one person, party, or side. 
+                    <br>
+                    Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees."
+                    <br> 
+                    <i><a href="https://www.aclu.org/" target="_blank" class="brand-text classic-serif ">
+                    - aclu.org
+                        </a>
+                    </i>
+                </p>
+            </div>
+
+    </section>
+    <section class="info-section roster-section reveal">
+        <div class="bio-row">
+            <!-- New Wrapper to contain arrows and slider -->
+            
+            <div class="slider-wrapper" id="ed-slider">
+                <button class="nav-arrow left" onclick="moveSlide('ed-slider', -1)">❮</button>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="images/ed-yohnka(ipmNewsroom).jpg" alt="Ed Yohnka" class="portrait-img">  <!-- Attribute IPM News -->
+                        <img src="images/edYohnka.jpg" alt="Ed Yohnka" class="portrait-img"> <!-- Attribute ACLU Illinois -->
+                    </div>
+                </div>
+
+                <button class="nav-arrow right" onclick="moveSlide('ed-slider', 1)">❯</button>
+
+                <div class="slider-dots"></div>
+            </div>
+            
+            <div class="bio-text">
+                <h2 class="classic-serif" style="font-weight: bold;">Ed Yohnka</h2>
+                <p class="brand-text" style="font-weight: bold;">ACLU of Illinois Director of Communications and Public Policy, Primary Spokesperson</p>
+                <p class=brand-text>"Ed Yohnka began his job at the ACLU in June 1999. He serves as a primary spokesperson for the civil rights advocacy organization. He appears regularly on television and radio programs in
+                     Illinois and throughout the nation. Yohnka also is widely cited in newspapers and publications on legal and legislative matters related to the ACLU of Illinois’ priorities.
+                    <br><br> From 1987 until 1999, Mr. Yohnka served on the staff of the American Bar Association, spending most of that time as a Special Presidential Assistant in the ABA’s Office of the President."
+                    <br><br>
+                    <i><a href="https://www.aclu-il.org/bios/edwin-yohnka/" target="_blank" class="brand-text classic-serif" style="color:white;">
+                    - ACLU Illinois
+                        </a>
+                    </i>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+         <script src="scripts.js" defer></script>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+
+        <p class="footer-credits">
+            Developer: Deniana Clemente
+        </p>
+
+        <p class="classic-serif">2501 W Addison St, Chicago, IL 60618</p>
+
+        <p class="footer-meta">
+            © 2026 Lane Tech Model United Nations
+        </p>
+    </div>
+</footer>
+
+</html>
