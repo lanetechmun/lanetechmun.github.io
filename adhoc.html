@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHOC</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <!-- Tab Bar -->
+        <nav class="tab-bar brand-font">
+            <!-- Logo & "LTMUN" -->
+            <div class="logo-container">
+                <a href="backupPage.html" class="brand-link">
+                    <img src="images/logo.png" alt="logo" class="brand-logo">
+                    <span style="font-size:220%">LTMUN</span>
+                </a>
+            </div>
+            <!-- Actual tabs-->
+            <div class="nav-links brand-font">
+                <!-- Dropdown Container -->
+                <div class="dropdown" tabindex="0">
+                    <span class="tab-link">CONFERENCE</span>
+                    <div class="dropdown-content">
+                        <a href="logistics.html">SCHEDULE & MAP</a>
+                        <a href="keynote.html">KEYNOTE SPEAKER</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="tab-link">ABOUT US</a>
+                <a href="committees.html" class="tab-link">COMMITTEES</a>
+                <a href="secretariat.html" class="tab-link">SECRETARIAT</a>
+            </div>
+        </nav>
+
+        <!-- Main Title -->
+        <main class="tabBar-section adhoc-bg">
+            <div class="title-wrapper">
+                <h1 class="main-title-com">ADHOC</h1>
+            </div>
+        </main>
+    </div>
+    
+     <section class="info-section">
+        <!-- Secretary General (Image Left) -->
+        <div class="bio-row">
+            <!-- New Wrapper to contain arrows and slider -->
+             <div class="slider-wrapper" id="adhoc-slider">
+                <button class="nav-arrow left" onclick="moveSlide('adhoc-slider', -1)">❮</button>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <img src="images/jack-1.JPEG" alt="chair(s)" class="portrait-img">
+                        <img src="images/isaac-2.jpg" alt="chair(s)" class="portrait-img">
+                        <img src="images/jack-2.jpg" alt="chair(s)" class="portrait-img">
+                    </div>
+                </div>
+
+                <button class="nav-arrow right" onclick="moveSlide('adhoc-slider', 1)">❯</button>
+
+                <div class="slider-dots"></div>
+            </div>
+            
+            <div class="bio-text">
+                <h2 class="classic-serif" style="font-weight: bold;">Your Chairs</h2>
+                <p class="brand-text" style="font-weight: bold;">Jack Kochowicz & Isaac Dunn</p>
+                <p class="brand-text-com" style="font-size:1.2rem !important;">
+                   <b>Hi delegates!</b>
+                   <br>
+	                My name is Jack Kochowicz, and I’m a senior at Lane Tech. This is my fourth year doing Model UN, and I’m very excited to chair for the first time! I am an avid Chicago sports fan, particularly of the Bears, President of the High School Democrats Chapter at Lane, and rubber duck collector. 
+                    While I can’t disclose any information about our committee, rest assured that we will be winning bigly, more than any committee ever has ever before. Thank you for your attention to this matter.
+	                <br><br>
+                    If you have any questions or concerns, please do not hesitate to email me. Sometimes the most exciting part of my day is checking my school email, so I will respond to you, however sad that sounds. Thank you, and I’m looking forward to seeing you at LTMUN this year.
+                    <br><br>
+                    Hi, my name is Isaac Dunn and I'm a senior at Lane Tech. This is my second year doing Model UN, and first time chairing (with my beautiful double del). Outside of Model UN, I'm a member of our robotics team and a big Cubs fan. I’m very excited to see you at our conference this year!
+                </p>
+                <div>
+                    <a class="external-link-dark" href="mailto: jtkochowicz@cps.edu" target="_blank"> jtkochowicz@cps.edu </a>
+                    <br>
+                    <a class="external-link-dark" href="mailto: idunn1@cps.edu" target="_blank"> idunn1@cps.edu </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js" defer></script>
+    </section>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+
+        <p class="footer-credits">
+            Developer: Deniana Clemente
+        </p>
+
+        <p class="classic-serif">2501 W Addison St, Chicago, IL 60618</p>
+
+        <p class="footer-meta">
+            © 2026 Lane Tech Model United Nations
+        </p>
+    </div>
+</footer>
+
+</html>
