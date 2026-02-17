@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Death of Stalin</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Ruslan+Display&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <!-- Tab Bar -->
+        <nav class="tab-bar brand-font">
+            <!-- Logo & "LTMUN" -->
+            <div class="logo-container">
+                <a href="backupPage.html" class="brand-link">
+                    <img src="images/logo.png" alt="logo" class="brand-logo">
+                    <span style="font-size:220%">LTMUN</span>
+                </a>
+            </div>
+            <!-- Actual tabs-->
+            <div class="nav-links brand-font">
+                <!-- Dropdown Container -->
+                <div class="dropdown" tabindex="0">
+                    <span class="tab-link">CONFERENCE</span>
+                    <div class="dropdown-content">
+                        <a href="logistics.html">SCHEDULE & MAP</a>
+                        <a href="keynote.html">KEYNOTE SPEAKER</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="tab-link">ABOUT US</a>
+                <a href="committees.html" class="tab-link">COMMITTEES</a>
+                <a href="secretariat.html" class="tab-link">SECRETARIAT</a>
+            </div>
+        </nav>
+
+        <!-- Main Title -->
+        <main class="tabBar-section stalin-bg">
+            <div class="title-wrapper">
+                <h1 class="main-title-stalin">The Death <br> of Stalin</h1>
+            </div>
+        </main>
+    </div>
+    <!-- Info Section -->
+<section class="stalin-section" style="padding: 60px 0;">
+    <div class="chair-section-wrapper">
+    
+        <!-- LEFT SLIDER (Amir) -->
+        <div class="slider-wrapper" id="amir-slider">
+            <button class="nav-arrow left" onclick="moveSlide('amir-slider', -1)">❮</button>
+            <div class="slider-container">
+                <div class="slider">
+                    <!-- Added 'active' so it's visible on load -->
+                    <img src="images/amir-1.jpg" alt="Amir" class="portrait-stalin active">
+                    <img src="images/amir-2.jpg" alt="Amir" class="portrait-stalin">
+                </div>
+            </div>
+            <button class="nav-arrow right" onclick="moveSlide('amir-slider', 1)">❯</button>
+            <div class="slider-dots"></div>
+        </div>
+        
+        <!-- CENTERED TEXT -->
+        <div class="stalin-text" style="transform:translateY(-1rem);">
+            <h2 class="stalin-serif">Your Chairs</h2>
+            <p class="links-stalin" style="font-weight: bold; margin-bottom: 20px; transform:translateY(-1rem);">
+                <a>Amir Aguilar</a> | <a>Esme Siegelin</a>
+            </p>
+            
+            <p class="stalin-text-com">
+                Topic A: Soviet Succession<br> 
+                Topic B: Foreign Policy
+            </p>
+
+            <div class="links-stalin" style="margin-top: 20px;">
+                <a href="pdfs/Death of Stalin Background Guide.pdf" style="color: rgb(74, 0, 0) !important; font-weight: bold;">Download Background Guide</a>
+                <br><br>
+                <a href="mailto:aiaguilar2@cps.edu" target="_blank">aiaguilar2@cps.edu</a> | <a href="mailto:emsiegelin@cps.edu" target="_blank">emsiegelin@cps.edu</a>
+            </div>
+        </div>
+
+        <!-- RIGHT SLIDER (Esme) -->
+        <div class="slider-wrapper" id="esme-slider">
+            <button class="nav-arrow left" onclick="moveSlide('esme-slider', -1)">❮</button>
+            <div class="slider-container">
+                <div class="slider">
+                    <!-- Added 'active' so it's visible on load -->
+                    <img src="images/esme-1.jpeg" alt="Esme" class="portrait-stalin active">
+                    <img src="images/esme-2.jpeg" alt="Esme" class="portrait-stalin">
+                </div>
+            </div>
+            <button class="nav-arrow right" onclick="moveSlide('esme-slider', 1)">❯</button>
+            <div class="slider-dots"></div>
+        </div>
+
+    </div> <!-- End chair-section-wrapper -->
+</section>
+
+<!-- Essential Script Initialization -->
+<script src="scripts.js"></script>
+
+
+</body>
+
+<footer class="stalin-footer">
+    <div class="footer-content">
+        
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+
+        <p class="footer-credits-stalin">
+            Developer: Deniana Clemente
+        </p>
+
+        <p class="stalin-address">2501 W Addison St, Chicago, IL 60618</p>
+
+        <p class="footer-credits-stalin">
+            © 2026 Lane Tech Model United Nations
+        </p>
+    </div>
+</footer>
+
+</html>
