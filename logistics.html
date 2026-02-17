@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Logistics</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-wrapper">
+        <!-- Tab Bar -->
+        <nav class="tab-bar brand-font">
+            <!-- Logo & "LTMUN" -->
+            <div class="logo-container">
+                <a href="backupPage.html" class="brand-link">
+                    <img src="images/logo.png" alt="logo" class="brand-logo">
+                    <span style="font-size:220%">LTMUN</span>
+                </a>
+            </div>
+            <!-- Actual tabs-->
+            <div class="nav-links brand-font">
+                <!-- Dropdown Container -->
+                <div class="dropdown" tabindex="0">
+                    <span class="tab-link active">CONFERENCE</span>
+                    <div class="dropdown-content">
+                        <a href="logistics.html" class="active">SCHEDULE & MAP</a>
+                        <a href="keynote.html">KEYNOTE SPEAKER</a>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="tab-link">ABOUT US</a>
+                <a href="committees.html" class="tab-link">COMMITTEES</a>
+                <a href="secretariat.html" class="tab-link">SECRETARIAT</a>
+            </div>
+        </nav>
+    </div>
+    
+    <section class="info-section">
+        <p class="classic-serif brand-text" style= "text-align: center; font-weight: bold; margin-bottom: 30px; font-size:24px;">Conference Schedule</p>
+        <div>  
+            <!-- Table width is now fit-content to eliminate wasted space, margin: auto centers it on the page -->
+            <table border="1" style="border-collapse: collapse; text-align: center; width: fit-content; margin: auto;">
+                <thead>
+                    <tr style="background-color: rgb(217, 236, 224);">
+                        <th style="padding: 10px; white-space: nowrap;">Start time</th>
+                        <th style="padding: 10px; white-space: nowrap;">End time</th>
+                        <th style="background-color:rgb(255, 226, 65); color: rgb(14, 49, 26); padding: 10px; white-space: nowrap;">Block 1</th>
+                        <th style="background-color: rgb(33, 78, 49); color: rgb(217, 236, 224); padding: 10px; white-space: nowrap;">Block 2</th>
+                    </tr>
+                </thead>
+                <tbody class="brand-text brand-font" style="font-size:1.1rem !important;">
+                    <tr>
+                        <td style="padding: 8px;">8:15 am</td>
+                        <td style="padding: 8px;">9:15 am</td>
+                        <td colspan="2" style="padding: 8px;">Doors open</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">9:00 am</td>
+                        <td style="padding: 8px;">9:50 am</td>
+                        <td colspan="2" style="padding: 8px;">Opening Ceremonies</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">10:00 am</td>
+                        <td style="padding: 8px;">11:55 am</td>
+                        <td style="padding: 8px; white-space: nowrap;">Committee Session 1</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">10:00 am</td>
+                        <td style="padding: 8px;">12:40 pm</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                        <td style="padding: 8px; white-space: nowrap;">Committee Session 1</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">12:00 pm</td>
+                        <td style="padding: 8px;">12:40 pm</td>
+                        <td style="padding: 8px;">Lunch</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">12:45 pm</td>
+                        <td style="padding: 8px;">1:25 pm</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                        <td style="padding: 8px;">Lunch</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">12:45 pm</td>
+                        <td style="padding: 8px;">3:50 pm</td>
+                        <td style="padding: 8px; white-space: nowrap;">Committee Session 2</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">1:30 pm</td>
+                        <td style="padding: 8px;">3:50 pm</td>
+                        <td style="background-color: #f9f9f9; padding: 8px;"></td>
+                        <td style="padding: 8px; white-space: nowrap;">Committee Session 2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px;">4:00 pm</td>
+                        <td style="padding: 8px;">5:00 pm</td>
+                        <td colspan="2" style="padding: 8px;">Closing Ceremonies</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <p class="classic-serif brand-text" style="text-align: center; margin-bottom: 30px; font-size:24px;">
+            2501 W Addison St, Chicago, IL 60618
+        </p>
+
+        
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.566299132219!2d-87.69322902472263!3d41.94516996121344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd27a64d83c2b%3A0xa3ef3e5125e0e7a4!2sLane%20Tech%20College%20Prep%20High%20School!5e0!3m2!1sen!2sus!4v1769652432027!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </section>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        
+        <img src="images/logo.png" alt="logo" class="footer-logo">
+
+        <p class="footer-credits">
+            Developer: Deniana Clemente
+        </p>
+
+        <p class="classic-serif">2501 W Addison St, Chicago, IL 60618</p>
+
+        <p class="footer-meta">
+            © 2026 Lane Tech Model United Nations
+        </p>
+    </div>
+</footer>
+
+</html>
