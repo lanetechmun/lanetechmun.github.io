@@ -1,0 +1,1122 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com');
+.brand-font {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+}
+
+/* Flexbox container for the whole page */
+body {
+    display: block;
+
+}
+
+
+/* Tab Bar Styles */
+.tab-bar {
+    padding: 10px 20px;   
+    background-color: rgba(206, 206, 206, 0.5); /* opacity*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    backdrop-filter: blur(1px); 
+
+    position: sticky; /* Stays at top while scrolling */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keeps it above everything else */
+}
+
+/* Ensure the wrapper doesn't have overflow hidden, or sticky won't work */
+.hero-wrapper {
+    position: relative;
+}
+
+.external-link{
+    color:rgb(255, 226, 65);
+}
+
+.external-link-dark{
+    color:rgb(171, 150, 30);
+}
+
+.tab-link {
+    text-decoration: none; /* Removes default blue underline */
+    display: inline-block; /* Allows padding to work correctly */
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-link:hover {
+    color: rgb(20, 53, 32); 
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+
+.tab-link.active {
+    color: rgba(33, 78, 49); 
+    border-bottom: 3px solid rgba(33, 78, 49);
+    font-weight: 600;
+}
+
+/* Centered Content Area */
+/* Base style for all hero sections - keep this! */
+.tabBar-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical center */
+    align-items: center;     /* Horizontal center */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    margin-top: -80px; /* Keeps the image behind the bar */
+    padding-top: 0;    /* REMOVE THIS: It's what's pushing the text down */
+}
+
+
+.ACLUcontainer {
+    display: flex;
+    width: 100%;        
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+}
+
+.giant-quote{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+    color: rgb(33, 78, 49); 
+}
+
+/* Attribute Lane Tech .org */
+.home-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.25)), url('images/laneTech.webp');
+}
+
+/* Attribute Ricemun */
+.committees-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.25)), url('images/committee-background.webp');
+}
+
+/* Attribute Lane Tech .org*/
+.secretariat-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.25)), url('images/lane-tech-droneshot.jpg');
+}
+
+
+/* Large committee backgrounds*/
+.WHO-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/OpioidCrisis.webp');
+}
+
+.DISEC-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/nuclearWeapons.png'); /* Attribute Physicians for Social Responsibility */
+}
+
+.theBoys-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/boys.jpg'); /* Attribute Refinery29 */
+}
+
+.americanRevolution-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/washingtonCrossing.avif'); /* Attribute History.com */
+}
+
+.stalin-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(122, 0, 0, 0.25)), url('images/stalin-painting.jpeg');/* Attribute History.com*/
+}
+
+.antarctic-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/antarcticaScene.jpg'); /* Attribute eco watch */
+}
+
+.adhoc-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/adhoc-background.jpg');/* Attribute Freepik */
+}
+
+.gsec-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/gsecBg.jpeg'); /* Attribute Popular Science */
+}
+
+.globalFinance-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/finCrisis.jpg'); /* Attribute CBS */
+}
+
+.brand-text {
+    color: rgb(33, 78, 49); 
+    line-height: 1.6;
+    font-size: 20px;
+     font-family: "Lato", sans-serif;
+}
+
+.gold{
+    color:rgb(255, 226, 65);
+}
+
+.brand-text-com {
+    font-family: "Lato", sans-serif;
+    color: rgb(33, 78, 49); 
+    line-height: 1.6;
+    font-size:1.5rem;
+}
+
+.main-title-stalin {
+    font-weight: 500;
+    color: rgb(74, 0, 0);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    font-family: "Ruslan Display", sans-serif;
+    font-size: 8rem;
+    text-align:center !important;
+    transform: translateX(9rem) !important;
+}
+
+.stalin-text {
+    color: rgb(236, 165, 0); 
+    line-height: 1.6;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    text-align:center !important;
+}
+
+.stalin-text-com {
+    font-family: "Oswald", sans-serif;
+    color: rgb(132, 11, 11);
+    line-height: 1.6;
+    font-size:1.5rem;
+    text-align: center;             /* Ensures text lines are centered within their column */
+    flex: 1;                        /* Allows text to take up remaining space if needed */
+    max-width: 400px;    
+    font-weight:bolder;   
+}
+
+.stalin-serif {
+  font-family: "Ruslan Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Use 400 for normal, 700 for bold */
+  font-style: normal;
+  font-size:3rem;
+  color: rgb(74, 0, 0);
+}
+
+.links-stalin a{
+    color: rgb(236, 165, 0); 
+}
+
+.links-stalin{
+    color: rgb(74, 0, 0);
+    text-align:center !important;
+}
+
+.chair-section-wrapper {
+    display: flex;                  /* Activates flexbox layout */
+    justify-content: center;        /* Centers items horizontally */
+    align-items: center;            /* Centers items vertically (important for different heights) */
+    gap: 40px;                      /* Adds spacing between images and text */
+    width: 100%;
+}
+
+.portrait-stalin {
+    position: absolute;     /* Stack images on top of each other */
+    top: 5;
+    left: 0;
+    width: 350px !important;
+    height: 475px !important;
+    object-fit: cover;
+    border-radius: 0 !important;
+    
+    /* Fade Logic */
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+    z-index: 1;            /* Adjust size to fit your design */
+    height: auto;
+}
+
+.stalin-section{
+    background-color:antiquewhite;
+}
+
+.stalin-footer {
+    background-color: rgb(58, 18, 18); /* matches tab bar softness */
+    backdrop-filter: blur(1px);
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-credits-stalin {
+    font-size: 14px;
+    color: rgb(222, 201, 173);
+    margin: 6px 0;
+}
+
+.stalin-address {
+  font-family: "Ruslan Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Use 400 for normal, 700 for bold */
+  font-style: normal;
+  color:rgb(255, 226, 65);
+}
+
+.main-title {
+    margin-bottom: 0; /* Removes space below the title */
+    line-height: 0.9;  
+    font-size: 10rem;
+    font-weight: 500;
+    color: rgb(14, 49, 26);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    font-family: "Changa One", sans-serif;
+}
+
+.main-title-com {
+    font-weight: 500;
+    color: rgb(14, 49, 26);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    font-family: "Changa One", sans-serif;
+    font-style: normal;
+    font-size: 8rem;
+}
+
+.main-title-contrast{
+    font-weight: 500;
+    color: rgb(217, 236, 224);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    font-family: "Changa One", sans-serif;
+    font-style: normal;
+    font-size: 8rem;
+}
+
+/* Container for the logo and text */
+.brand-link {
+    display: flex;
+    align-items: center; /* Vertically centers logo with text */
+    gap: 10px;        
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Changa One", sans-serif;
+}
+
+.brand-link span {
+    font-size: 24px;       /* Increase text size */
+    letter-spacing: 1px;   /* Optional: adds some breath between letters */
+    line-height: 1;        /* Prevents extra vertical spacing */
+}
+
+/* Controls the logo size */
+.brand-logo {
+    height: 42px;        /* Adjust this height to fit your bar */
+    width: auto;        
+    display: block;
+}
+
+.footer-logo {
+    height: 75px; 
+    align-items: center;
+}
+
+.info-section {
+    background-color: #ffffff;
+    /* Change 80px to 40px to pull text up */
+    padding: 40px 10% 80px 10%; 
+    position: relative;
+    z-index: 1;
+    min-height: 500px;
+}
+
+.roster-section{
+    background-color:rgb(20, 53, 32);
+    margin: 5%;
+    margin-top: 0%;
+    color:inherit;
+}
+
+.roster-section h2{
+    font-size: 30px; 
+    color:rgb(230, 214, 142);
+}
+
+.roster-section h3{
+    font-size: 20px;
+    color:rgb(255, 226, 65);
+}
+
+.roster-section p{
+    color:white;
+}
+
+.dot-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center; /* This centers the items horizontally */
+}
+
+.dot-list li:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px; 
+    color: rgb(255, 226, 65);
+}
+
+.dot-list li{
+    color:white !important;
+}
+
+.crisis-section{
+    background-color:rgb(20, 53, 32);
+}
+.crisis-section h1{
+    transform: translateY(-4vh); 
+    color:white;
+    font-family: "Changa One", sans-serif;
+    text-align: center;
+    font-size:3rem;
+    font-weight:500;
+}
+
+.ga-section{
+    background-color:white;
+}
+.ga-section h1{
+    transform: translateY(-4vh); 
+    color: rgb(14, 49, 26);
+    font-family: "Changa One", sans-serif;
+    text-align: center;
+    font-size:3rem;
+    font-weight:500;
+}
+
+.hybrid-section h1{
+     transform: translateY(-4vh); 
+    color: rgb(14, 49, 26);
+    font-family: "Changa One", sans-serif;
+    text-align: center;
+    font-size:3rem;
+    font-weight:500;
+}
+
+.classic-serif {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Use 400 for normal, 700 for bold */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.giant-quote{
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    font-size: 50 px;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+    color: rgb(33, 78, 49); 
+}
+
+.bio-row {
+    display: flex;
+    align-items: flex-start; /* Aligns text and image to the top */
+    gap: 40px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.bio-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers text and slider horizontally */
+    width: 350px;        /* Matches your .slider-wrapper width */
+    flex-shrink: 0;
+}
+
+.bio-header {
+    text-align: center;
+    width: 100%;
+}
+
+/* This class flips the row so the image moves to the right */
+.bio-row.reverse {
+    flex-direction: row-reverse;
+    text-align: right; /* Flips text alignment for the reverse rows */
+}
+
+/* Remove default margin from the H2 so it aligns perfectly with the image top */
+.bio-text h2 {
+    margin-top: 0; 
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.bio-text p {
+    margin-top: 0;
+}
+
+.committee-grid {
+    display: grid;
+    /* This creates as many columns as fit, but at least 250px each */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Force GA Section to 3 columns on Desktop */
+@media (min-width: 1024px) {
+    .ga-section:first-of-type .committee-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Force Crisis and Hybrid to 2 columns on Desktop */
+    .crisis-section .committee-grid,
+    .hybrid-section .committee-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px; /* Keeps them centered and not too stretched */
+    }
+}
+
+/* Tablet/Mobile: Everything stacks or becomes 2 columns naturally */
+@media (max-width: 768px) {
+    .committee-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px; /* Tighter gap for smaller screens */
+    }
+    
+    .main-title {
+        font-size: 5rem; /* Shrinks the massive title so it doesn't overflow */
+    }
+}
+
+.committee-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* IMAGES FADE IN ON SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+/* The class added by JavaScript when the image enters the screen */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.committee-card img {
+    width: 100%;
+    height: auto;       /* Let height adjust to keep aspect ratio */
+    aspect-ratio: 4 / 3; /* Keeps all committee images the exact same shape */
+    object-fit: cover;
+}
+
+.committee-card:hover img {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.committee-card p {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: inherit;
+    text-align:center;
+}
+
+.site-footer {
+    background-color: rgba(206, 206, 206, 0.35); /* matches tab bar softness */
+    backdrop-filter: blur(1px);
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(33, 78, 49); 
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.footer-credits {
+    font-size: 14px;
+    color: #444;
+    margin: 6px 0;
+}
+
+.footer-meta {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- FADE CAROUSEL SYSTEM --- */
+
+/* 1. The Wrapper (The Anchor) */
+.slider-wrapper {
+    position: relative;
+    width: 350px; 
+    height: 475px;
+    flex-shrink: 0;
+}
+
+/* 2. The Container (The Window) */
+.slider-container {
+    z-index: 1;
+    width: 350px;
+    height: 475px;
+    overflow: hidden;       /* Changed from overflow-x: auto */
+    display: block;
+    position: relative;     /* Required for absolute children */
+    border-radius: 0 !important;
+}
+
+/* 3. The Track (The Stack) */
+.slider {
+    display: block;         /* Changed from flex */
+    width: 100%;
+    height: 100%;
+}
+
+/* 4. The Images (The Layers) */
+.slider img, .portrait-img {
+    position: absolute;     /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    width: 350px !important;
+    height: 475px !important;
+    object-fit: cover;
+    border-radius: 0 !important;
+    
+    /* Fade Logic */
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; 
+    z-index: 1;
+}
+
+/* Class added by JS to show the current image */
+.slider img.active {
+    opacity: 1 !important;
+    z-index: 5;
+}
+
+/* 5. The Controls (The Arrows) */
+.nav-arrow {
+    z-index: 2010; /* Keeps arrows above the stacked images */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    pointer-events: auto;
+    border-radius: 22px;
+}
+
+.nav-arrow:hover {
+    background: rgba(182, 182, 182, 0.3);
+}
+
+.nav-arrow.left { left: 0; }
+.nav-arrow.right { right: 0; }
+
+/* --- INDICATORS --- */
+.slider-dots {
+    z-index: 2015; /* Keeps dots above images */
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/*Mini Version*/
+    /* Override sizes for the grid version */
+    .slider-wrapper.mini, 
+    .slider-wrapper.mini .slider-container,
+    .slider-wrapper.mini .slider img {
+        width: 250px !important; /* Adjust this to your grid's width */
+        height: 300px !important; /* Adjust this to your grid's height */
+    }
+
+    /* Ensure the dots are smaller if needed */
+    .slider-wrapper.mini .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+
+/* Reduce side padding for the whole section to fit 300px cards */
+.info-section {
+    padding: 60px 5% !important; 
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Decreased gap to save horizontal space */
+    margin-top: 40px;
+    justify-items: center; /* Centers cards if the screen is very wide */
+}
+
+.grid-card {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.grid-card h2{
+    color:rgb(230, 214, 142);
+}
+
+.grid-card p{
+    color:white;
+}
+
+/* Scaled up Mini Slider */
+.slider-wrapper.mini, 
+.slider-wrapper.mini .slider-container, 
+.slider-wrapper.mini .slider img {
+    width: 300px !important;
+    height: 410px !important; /* Scaled up proportionally */
+    border-radius: 0 !important;
+}
+
+.grid-text h2 {
+    font-size: 20px !important;
+    margin-top: 15px !important;
+    line-height: 1.2;
+}
+
+.grid-text p {
+    font-size: 18px !important;
+    margin-top: 5px !important;
+}
+
+a {
+  color: rgb(46, 127, 53);
+  font-weight: bold;
+}
+
+/* Container must be relative so dropdown can be absolute to it */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(206, 206, 206, 0.95); /* Matches your tab bar softness */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 2000; /* Higher than sticky header */
+    top: 100%; /* Positions it directly below the tab */
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+/* Hover effects for dropdown links */
+/* Show the dropdown menu on hover OR when an element inside has focus */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+/* Optional: Improves mobile experience by ensuring the content is interactive */
+.dropdown-content:focus-within {
+    display: block;
+}
+
+
+/* Ensure the 'Conference' span looks like the other links */
+.dropdown .tab-link {
+    cursor: default;
+    padding-bottom: 20px; /* Extends hover area to prevent accidental closing */
+}
+
+
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: 0; /* Keeps it sharp and square */
+}
+
+/* Position the arrow at the bottom of the hero */
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Create the arrow using borders */
+.scroll-down-arrow span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 3px solid rgb(255, 255, 255, 0.9); 
+    border-right: 3px solid  rgb(255, 255, 255, 0.9); 
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+}
+
+/* The Bouncing Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    40% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+    60% {
+        transform: translateY(-5px) rotate(45deg);
+    }
+}
+
+/* Pull the carousel up closer to the roster */
+.carousel-section {
+    padding-top: 0 !important; /* Removes the top 60px padding */
+    margin-top: -30px;         /* Pulls the section up even further */
+}
+
+.carousel-section h2 {
+    margin-top: 0;             /* Removes the gap above the "Team Moments" title */
+    margin-bottom: 20px;       /* Keeps a small gap before the photos start */
+}
+
+/* Carousel Layout (at bottom of index) */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;       /* Ensures it spans the full width of the parent */
+    max-width: none;   /* REMOVE the 1200px cap so it matches the Roster above */
+    margin: 0;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    padding: 10px 0px; 
+    overflow: hidden;
+    width: 100%;       /* Ensure the container is also full-width */
+}
+
+.carousel-track {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: none !important;
+    gap: 15px;
+    will-change: transform;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+}
+
+.carousel-slide img {
+    height: 400px; /* Force uniform height */
+    width: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide img:hover {
+    transform: scale(1.03);
+}
+
+/* Nav Arrows: Based on your Scroll-Down Chevron */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;      /* Remove the circle */
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    opacity: 0.6;          /* Semi-transparent by default */
+}
+
+.carousel-nav:hover {
+    opacity: 1;            /* Brightens on hover */
+}
+
+.carousel-nav span {
+    display: block;
+    width: 25px;           /* Matches .scroll-down-arrow size */
+    height: 25px;          /* Matches .scroll-down-arrow size */
+    /* Light, semi-transparent white borders from your original CSS */
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9); 
+    border-right: 3px solid rgba(255, 255, 255, 0.9); 
+}
+
+.carousel-nav.left { 
+    left: -10px; 
+}
+.carousel-nav.left span { 
+    transform: rotate(135deg); /* Points Left */
+}
+
+.carousel-nav.right { 
+    right: -10px; 
+}
+.carousel-nav.right span { 
+    transform: rotate(-45deg);  /* Points Right */
+}
+
+/* Lightbox Modal */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 5000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-img {
+    max-width: 90%;
+    max-height: 85%;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+
+.title-wrapper {
+    transform: translateY(5vh); 
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-wrapper p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom:10px;
+    width: 100%; /* Ensure it spans the width to allow centering */
+    max-width: 800px; /* Optional: keeps text from getting too wide */
+}
+
+.title-wrapper-main {
+    position: relative;
+    display: block;      /* Allows it to respect max-width */
+    margin: 0 auto;      /* Centers the entire box in the hero section */
+    max-width: 800px;    /* Prevents the banner from hitting screen edges */
+    width: 90%;          /* Responsive width for smaller screens */
+    padding: 40px 20px;
+    text-align: center;  /* Centers all text inside the banner */
+    z-index: 1;
+}
+
+.title-wrapper-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;             /* Start from the left edge of the wrapper */
+    height: 100%;
+    width: 0;            /* Start with 0 width for the unfurl effect */
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    /* Unfurls from the center-left for a smoother look */
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease;
+}
+
+.title-wrapper-main.unfurl::before {
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Ensure text is visible and centered */
+.title-wrapper-main h1, 
+.title-wrapper-main p {
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1s ease 0.6s, transform 1s ease 0.6s;
+}
+
+.title-wrapper-main.unfurl h1, 
+.title-wrapper-main.unfurl p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Page Specifics */
+.media-crew-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color:black !important;
+}
+
+/* CONTACT SOCIAL SCALE FIX */
+.contact-social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.social-btn {
+    /* Critical Reset: Prevents massive size inheritance */
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 38px !important; /* Standard button height */
+    width: auto !important;
+    padding: 0 16px !important;
+    
+    /* Typography */
+    font-family: "Saira", sans-serif;
+    font-size: 14px !important; 
+    font-weight: 700;
+    line-height: 1 !important; /* Kills parent line-height stretching */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+.social-btn svg {
+    margin-right: 8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.ig-btn {
+    background-color: rgb(33, 78, 49); /* Brand Green */
+    color: white !important;
+}
+
+.tt-btn {
+    background-color: #000; /* Black for TikTok */
+    color: white !important;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* Sidebar Layout for Media/Socials */
+.contact-row {
+    display: flex;
+    justify-content: space-between; /* Pushes list to left, socials to right */
+    align-items: flex-start;        /* Aligns tops of both columns */
+    gap: 50px;                      /* Space between the two columns */
+    flex-wrap: wrap;                /* Stack on top of each other on mobile */
+}
+
+.media-crew-container {
+    flex: 1; /* Takes up available space on the left */
+}
+
+.social-side-container {
+    flex: 1; /* Takes up available space on the right */
+    min-width: 300px; /* Prevents it from getting too squished */
+}
+
+/* Ensure buttons stay in a row within their column */
+.contact-social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
