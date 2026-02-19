@@ -1029,6 +1029,42 @@ a {
     transform: translateY(0);
 }
 
+/* --- Register Button Under Hero Banner --- */
+/* Register button attached to unfurl banner */
+.register-btn {
+    position: absolute;
+    bottom: -24px; /* Overlaps the bottom of the banner */
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    
+    padding: 14px 40px;
+    background-color: rgb(33, 78, 49);
+    color: white;
+    font-family: "Saira", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+
+    opacity: 0;
+    transition: opacity 0.8s ease 1s, transform 0.6s ease 1s, background 0.2s;
+    z-index: 5;
+}
+
+/* Appear when banner unfurls */
+.title-wrapper-main.unfurl .register-btn {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+/* Hover */
+.register-btn:hover {
+    background-color: rgb(46, 127, 53);
+    transform: translateX(-50%) scale(1.05);
+}
+
 /* Contact Page Specifics */
 .media-crew-list li {
     font-size: 1.1rem;
@@ -1119,4 +1155,3 @@ a {
         gap: 30px;
     }
 }
-
