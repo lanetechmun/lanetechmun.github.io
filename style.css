@@ -158,7 +158,7 @@ body {
 }
 
 .adhoc-bg {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/adhoc-background.jpg');/* Attribute Freepik */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(124, 124, 124, 0.25)), url('images/adhoc-background.jpg');/* Attribute Vecteezy */
 }
 
 .gsec-bg {
@@ -371,7 +371,7 @@ body {
     color:white;
 }
 
-.dot-list {
+.dot-list{
     list-style: none;
     padding: 0;
     display: flex;
@@ -388,6 +388,25 @@ body {
 
 .dot-list li{
     color:white !important;
+}
+
+.credit-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center; /* This centers the items horizontally */
+}
+
+.credit-list li:not(:last-child)::after {
+    content: "•";
+    margin: 0 8px; 
+    color: #9b9b9b;
+}
+
+.credit-list li{
+    color:#444 !important;
 }
 
 .crisis-section{
