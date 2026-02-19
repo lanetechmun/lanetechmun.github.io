@@ -54,7 +54,7 @@ body {
 }
 
 .external-link-dark{
-    color:rgb(171, 150, 30);
+    color:rgb(162, 122, 0);
 }
 
 .tab-link {
@@ -1078,7 +1078,7 @@ a {
 
 /* Hover */
 .register-btn:hover {
-    background-color: rgb(46, 127, 53);
+    background-color: rgb(162, 122, 0);
     transform: translateX(-50%) scale(1.05);
 }
 
