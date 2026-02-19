@@ -490,14 +490,14 @@ body {
 }
 
 /* Force GA Section to 3 columns on Desktop */
-@media (min-width: 1024px) {
-    .ga-section:first-of-type .committee-grid {
+@media (min-width: 64rem) {
+    .hybrid--section .committee-grid {
         grid-template-columns: repeat(3, 1fr);
     }
     
     /* Force Crisis and Hybrid to 2 columns on Desktop */
     .crisis-section .committee-grid,
-    .hybrid-section .committee-grid {
+    .ga-section .committee-grid {
         grid-template-columns: repeat(2, 1fr);
         max-width: 800px; /* Keeps them centered and not too stretched */
     }
