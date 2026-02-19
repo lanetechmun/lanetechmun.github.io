@@ -600,6 +600,10 @@ body {
     margin: 6px 0;
 }
 
+.footer-credits a{
+    color:#566c48;
+}
+
 .footer-meta {
     font-size: 13px;
     color: #666;
