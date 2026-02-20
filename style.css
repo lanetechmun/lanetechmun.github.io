@@ -1390,3 +1390,34 @@ a {
     display: block;
   }
 }
+
+/* Hide the mobile menu by default */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(206, 206, 206, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 2000;
+    backdrop-filter: blur(5px);
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none; /* Show only on mobile */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .tab-bar.desktop-links { display: none; }
+    .hamburger { display: block; }
+}
