@@ -1364,3 +1364,29 @@ a {
       height: auto !important;  /* Maintain aspect ratio */
   }
 }
+
+/* Default: hide the bubble on desktop */
+#mobile-warning {
+  display: none;                  /* Hidden by default */
+  position: fixed;                /* Stays in place even when scrolling */
+  bottom: 20px;                   /* 20px from bottom */
+  left: 50%;                      /* Center horizontally */
+  transform: translateX(-50%);    /* Perfect centering */
+  background-color: rgba(255, 226, 65, 0.9); /* Yellowish bubble */
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 25px;            /* Rounded pill shape */
+  font-family: "Saira", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 9999;                  /* On top of everything */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Show only on small screens (phones) */
+@media (max-width: 768px) {
+  #mobile-warning {
+    display: block;
+  }
+}
