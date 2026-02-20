@@ -486,11 +486,6 @@ body {
     align-items: center;
     text-align: center;
   }
-
-  .bio-row.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .bio-row {
@@ -503,8 +498,26 @@ body {
 
 @media (max-width: 768px) {
   .bio-column {
+    width: 100% !important;  /* Takes full width on mobile */
+    max-width: 500px;         /* Prevents it from stretching too wide */
+    flex-shrink: 0;           /* Prevent shrinking */
+    margin: 0 auto;           /* Center the column */
+  }
+
+  .bio-text {
     width: 100% !important;
-    max-width: 400px;
+    text-align: center !important; /* Text sits below image */
+    margin-top: 15px;             /* Add some spacing below image */
+  }
+
+  .bio-row.reverse {
+    flex-direction: column;      /* Stack image + text */
+    text-align: center;          /* Centered text for stacked layout */
+    align-items: center;         /* Center everything horizontally */
+  }
+
+  .bio-text p {
+    text-align: center !important; /* Ensure paragraphs are centered */
   }
 }
 
@@ -1327,4 +1340,3 @@ a {
       height: auto !important;  /* Maintain aspect ratio */
   }
 }
-
