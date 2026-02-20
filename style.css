@@ -1411,6 +1411,6 @@ a {
 
 /* Mobile breakpoint */
 @media (max-width: 768px) {
-    .tab-bar.desktop-links { display: none; }
+    .tab-bar.desktop-links.dropdown{ display: none; }
     .hamburger { display: block; }
 }
