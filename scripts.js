@@ -81,11 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (warning && window.innerWidth <= 768) {
         setTimeout(() => {
             warning.classList.add('fade-out');
-        }, 4000);
+        }, 6000);
 
         setTimeout(() => {
             warning.style.display = 'none';
-        }, 4600);
+        }, 6600);
     }
 });
 
