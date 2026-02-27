@@ -1387,6 +1387,17 @@ a {
   }
 }
 
+#mobile-warning {
+  opacity: 1;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade + slight slide down */
+#mobile-warning.fade-out {
+  opacity: 0;
+  transform: translateX(-50%) translateY(10px);
+}
+
 /* Hide the mobile menu by default */
 .mobile-menu {
     display: none;
