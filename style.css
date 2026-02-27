@@ -497,34 +497,30 @@ body {
 }
 
 @media (max-width: 768px) {
-  .bio-row {
-    flex-direction: column;       /* Stack image + text */
-    align-items: center;          /* Center horizontally */
-    text-align: center;           /* Center all text inside */
-  }
 
+  .bio-row,
   .bio-row.reverse {
-    flex-direction: column;       /* Also stack reverse rows */
-    text-align: center;
+    flex-direction: column;   /* Stack normally */
     align-items: center;
+    text-align: center;
   }
 
   .bio-column {
-    width: 100% !important;       /* Full width on mobile */
-    max-width: 400px;             /* Prevent too wide */
-    margin: 0 auto;               /* Center horizontally */
-    flex-shrink: 0;               /* Prevent shrinking */
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .bio-text {
-    width: 100% !important;
-    text-align: center !important; /* Ensure text is centered under image */
-    margin-top: 15px;              /* Space between image and text */
+    width: 100%;
+    text-align: center !important;
+    margin-top: 15px;
   }
 
   .bio-text p {
-    text-align: center !important; /* Override any left-align */
+    text-align: center !important;
   }
+
 }
 
 .bio-column {
