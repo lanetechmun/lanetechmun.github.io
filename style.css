@@ -121,14 +121,21 @@ body {
   --tabbar-height: 80px;
 }
 
-
-.ACLUcontainer {
+.ACLU-container {
     display: flex;
-    width: 100%;        
-    justify-content: center; /* Horizontal centering */
-    align-items: center;     /* Vertical centering */
+    flex-direction: column; /* Stacks image and text vertically */
+    align-items: center;    /* Centers items horizontally in a column layout */
+    justify-content: center; /* Centers items vertically if container has height */
+    width: 100%;
+    text-align: center;      /* Ensures text inside the <p> is also centered */
 }
 
+.ACLU-container img {
+    max-width: 100%;        /* Prevents image from overflowing on small screens */
+    height: auto;
+    display: block;          /* Helps with consistent spacing/centering */
+    margin-bottom: 20px;     /* Optional: adds space between image and quote */
+}
 
 /* Attribute Lane Tech .org */
 .home-bg {
