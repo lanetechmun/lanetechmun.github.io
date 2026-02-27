@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', () => {
-            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+            mobileMenu.classList.toggle('active');
         });
     }
 });
