@@ -1523,3 +1523,36 @@ a {
   }
 
 }
+
+/* ---- STALIN MOBILE SLIDER MERGE ---- */
+
+/* Hide combined slider by default (desktop) */
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Show combined slider */
+    .mobile-only {
+        display: block;
+    }
+
+    /* Hide individual sliders */
+    #amir-slider,
+    #esme-slider {
+        display: none !important;
+    }
+
+    /* Match other chair mobile formatting */
+    .stalin-section .slider-wrapper {
+        max-width: 350px;
+        margin: 0 auto 30px auto;
+    }
+
+    .stalin-text {
+        text-align: center;
+        transform: none !important;
+    }
+
+}
