@@ -1489,18 +1489,18 @@ a {
 /* ---- USG MOBILE CLEANUP ---- */
 @media (max-width: 768px) {
 
-  /* 1️Hide all mini sliders */
+  /* 1️ Hide all mini sliders */
   .slider-wrapper.mini {
       display: none !important;
   }
 
-  /* 2️Force 1-column layout */
+  /* 2️ Force 1-column layout */
   .member-grid {
       grid-template-columns: 1fr !important;
       gap: 40px; /* Optional: gives breathing room between officers */
   }
 
-  /* 3️Center text blocks nicely */
+  /* 3️ Center text blocks nicely */
   .grid-card {
       max-width: 400px;
       margin: 0 auto;
@@ -1508,6 +1508,18 @@ a {
 
   .grid-text {
       text-align: center;
+  }
+
+}
+
+/* ---- GLOBAL HERO MOBILE FIX ---- */
+@media (max-width: 768px) {
+
+  .tabBar-section {
+      background-attachment: scroll !important; /* Disable parallax */
+      background-size: cover !important;        /* Keep full bleed */
+      background-position: center center !important;
+      min-height: 85vh; /* Or keep your existing */
   }
 
 }
