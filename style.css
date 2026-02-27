@@ -1402,6 +1402,10 @@ a {
     backdrop-filter: blur(5px);
 }
 
+.mobile-menu.active {
+    display: flex;
+}
+
 /* Hamburger button */
 .hamburger {
     display: none; /* Show only on mobile */
@@ -1416,4 +1420,21 @@ a {
 @media (max-width: 768px) {
     .tab-bar.desktop-links.dropdown.nav-links{ display: none; }
     .hamburger { display: block; }
+}
+
+/* Default (Desktop) */
+.hamburger,
+.mobile-menu {
+    display: none;
+}
+
+/* Mobile Only */
+@media (max-width: 768px) {
+    .desktop-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
