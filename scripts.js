@@ -74,6 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
     initFadeSlider('theBoys-slider');
     initFadeSlider('adhoc-slider');
     initFadeSlider('who-slider');
+
+        // MOBILE WARNING FADE
+    const warning = document.getElementById('mobile-warning');
+
+    if (warning && window.innerWidth <= 768) {
+        setTimeout(() => {
+            warning.classList.add('fade-out');
+        }, 4000);
+
+        setTimeout(() => {
+            warning.style.display = 'none';
+        }, 4600);
+    }
 });
 
 //SCROLL DOWN ARROW
