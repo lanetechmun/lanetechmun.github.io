@@ -1451,3 +1451,37 @@ a {
         display: block;
     }
 }
+
+/* ---- FIX DENIANA MOBILE LAYOUT ---- */
+@media (max-width: 768px) {
+
+  .bio-row.reverse {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+  }
+
+  .bio-row.reverse .bio-text {
+      display: block !important;
+      width: 100% !important;
+      max-width: 400px;
+      margin: 0 auto;
+      flex: unset !important;
+      text-align: center !important;
+  }
+
+  .bio-row.reverse .bio-text p {
+      text-align: center !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .bio-row.reverse .bio-column:first-child {
+      order: 1;
+  }
+
+  .bio-row.reverse .bio-text {
+      order: 2;
+  }
+
+}
