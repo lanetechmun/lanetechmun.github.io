@@ -95,7 +95,9 @@ body {
 
 @media (max-width: 768px) {
   .tabBar-section {
-    background-attachment: scroll;
+    background-size: cover;
+    background-position: top center;
+    min-height: 85vh;
   }
 }
 /* Centered Content Area */
