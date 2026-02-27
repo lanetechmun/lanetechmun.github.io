@@ -1556,3 +1556,29 @@ a {
     }
 
 }
+
+/* ---- STALIN MOBILE TEXT STANDARDIZATION ---- */
+@media (max-width: 768px) {
+
+  .stalin-text {
+      transform: none !important;   /* Remove desktop vertical shift */
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  .stalin-text h2 {
+      margin-top: 10px;
+  }
+
+  .stalin-text-com {
+      margin-top: 15px;
+      line-height: 1.6;
+  }
+
+  .links-stalin {
+      margin-top: 20px;
+  }
+
+}
