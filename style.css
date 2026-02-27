@@ -1582,3 +1582,26 @@ a {
   }
 
 }
+
+/* ---- LOGISTICS TABLE MOBILE FIX ---- */
+@media (max-width: 768px) {
+
+  .info-section {
+      padding: 0 15px;
+  }
+
+  .info-section table {
+      width: 100% !important;
+      max-width: 100%;
+      font-size: 0.9rem;
+      table-layout: fixed;
+  }
+
+  .info-section th,
+  .info-section td {
+      white-space: normal !important;  /* Allow wrapping */
+      word-wrap: break-word;
+      padding: 6px;
+  }
+
+}
