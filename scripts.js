@@ -239,7 +239,7 @@ function updateCountdown() {
     const difference = targetDate - now;
 
     if (difference <= 0) {
-        document.getElementById("countdown").innerHTML = "Conference has started!";
+        document.getElementById("countdown").innerHTML = "LIVE NOW";
         return;
     }
 
