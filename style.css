@@ -1656,3 +1656,29 @@ a {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
+/* ---- COUNTDOWN MOBILE PERFECT SCALING ---- */
+@media (max-width: 768px) {
+
+  .countdown {
+    display: flex;
+    flex-wrap: nowrap; /* force single row */
+    gap: clamp(6px, 2vw, 14px);
+    justify-content: center;
+  }
+
+  .countdown div {
+    flex: 1;           /* all boxes share space evenly */
+    min-width: 0;      /* prevents overflow */
+    padding: clamp(6px, 1.5vw, 10px);
+  }
+
+  .countdown span {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+  }
+
+  .countdown label {
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
+  }
+
+}
