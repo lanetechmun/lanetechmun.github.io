@@ -1639,3 +1639,21 @@ a {
     letter-spacing: 1px;
     color: rgb(33, 78, 49);
 }
+
+.countdown-live {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    background: rgb(33, 78, 49);
+    padding: 12px 28px;
+    border-radius: 999px;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
