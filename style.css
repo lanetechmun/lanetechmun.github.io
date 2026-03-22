@@ -1643,8 +1643,7 @@ a {
 .countdown-live {
     font-size: 28px;
     font-weight: 800;
-    color: white;
-    background: rgb(33, 78, 49);
+    color: rgb(162, 122, 0);
     padding: 12px 28px;
     border-radius: 999px;
     letter-spacing: 1px;
