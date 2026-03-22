@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //COUNTDOWN
 function updateCountdown() {
-    const targetDate = new Date("January 1, 2020 00:00:00").getTime();
+    const targetDate = new Date("2026-04-04T08:00:00-05:00").getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
