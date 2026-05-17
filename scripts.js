@@ -240,7 +240,7 @@ function updateCountdown() {
     const difference = targetDate - now;
 
     if (difference <= 0) {
-        document.getElementById("countdown").innerHTML = '<div class="countdown-live">LIVE NOW</div>';
+        document.getElementById("countdown").innerHTML = '<div class="countdown-live">See you next year!</div>';
         return;
     }
 
